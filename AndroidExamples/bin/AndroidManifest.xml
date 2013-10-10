@@ -32,7 +32,7 @@
 
         <activity
             android:name="com.example.fragment.FragmentActivity"
-            android:label="@string/title_activity_fragment_example" >
+            android:label="Fragment Example" >
         </activity>
     </application>
 

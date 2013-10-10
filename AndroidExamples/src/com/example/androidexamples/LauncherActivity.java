@@ -14,17 +14,30 @@ public class LauncherActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_launcher);
+		
 		Button brExample = (Button) findViewById(R.id.brexample);
 		brExample.setOnClickListener(this);
+		
+		Button frExample = (Button) findViewById(R.id.fragmentexample);
+		frExample.setOnClickListener(this);
 	}
 
 	@Override
 	public void onClick(View arg0) {
 		Log.i(TAG, "onClick");
+		Intent i = new Intent();
+		
 		switch (arg0.getId()) {
-		case R.id.brexample:
-			Intent i = new Intent(this, com.example.broadcastreceiver.BroadcastReceiverActivity.class);
+
+		case R.id.fragmentexample:
+			i.setClass(this, com.example.fragment.FragmentActivity.class);
 			startActivity(i);
+			break;
+		
+		case R.id.brexample:
+			i.setClass(this, com.example.broadcastreceiver.BroadcastReceiverActivity.class);
+			startActivity(i);
+			break;
 		}
 	}
 }
