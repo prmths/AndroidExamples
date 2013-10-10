@@ -1,6 +1,7 @@
 package com.example.fragment;
 
-import com.example.broadcastreceiverexample.R;
+
+import com.example.androidexamples.R;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -17,5 +18,4 @@ public class Fragment1 extends Fragment {
 	        container, false);
 	    return view;
 	  }
-
 } 

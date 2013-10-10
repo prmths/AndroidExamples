@@ -1,12 +1,12 @@
 package com.example.fragment;
 
-import com.example.broadcastreceiverexample.R;
-
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.androidexamples.R;
 
 public class Fragment2 extends Fragment {
 

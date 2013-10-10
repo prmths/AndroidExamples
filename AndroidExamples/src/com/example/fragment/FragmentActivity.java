@@ -1,10 +1,9 @@
 package com.example.fragment;
 
-import com.example.broadcastreceiverexample.R;
-
-import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
+import android.os.Bundle;
+
+import com.example.androidexamples.R;
 
 public class FragmentActivity extends Activity {
 

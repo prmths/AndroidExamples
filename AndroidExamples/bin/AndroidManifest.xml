@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.broadcastreceiverexample"
+    package="com.example.androidexamples"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="12"
         android:targetSdkVersion="18" />
 
     <application
@@ -14,9 +14,9 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.broadcastreceiver.MainActivity"
+            android:name="com.example.androidexamples.LauncherActivity"
             android:label="@string/app_name" >
-            <intent-filter>
+           <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -25,7 +25,7 @@
 
         <receiver android:name="com.example.broadcastreceiver.ExampleReceiver" >
             <intent-filter>
-                <action android:name="com.example.broadcastreceiverexample" >
+                <action android:name="com.example.broadcastreceiver" >
                 </action>
             </intent-filter>
         </receiver>
