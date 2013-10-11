@@ -14,5 +14,4 @@ public class ExampleReceiver extends BroadcastReceiver {
 		msg += payload.equals("") ? "Not Entered" : payload;
 		Toast.makeText(arg0, msg, Toast.LENGTH_LONG).show();		
 	}
-
 }

@@ -27,18 +27,19 @@ public class LauncherActivity extends Activity implements OnClickListener {
 
 	@Override
 	public void onClick(View arg0) {
-		Log.i(TAG, "onClick");
 		Intent i = new Intent();
 		
 		switch (arg0.getId()) {
 
 		case R.id.fragmentexample:
 			i.setClass(this, FragmentActivity.class);
+			Log.i(TAG, "Starting FragmentActivity");
 			startActivity(i);
 			break;
 		
 		case R.id.brexample:
 			i.setClass(this, BroadcastReceiverActivity.class);
+			Log.i(TAG, "Starting BroadcastReceiverActivity");
 			startActivity(i);
 			break;
 		}

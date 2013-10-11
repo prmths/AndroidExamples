@@ -30,7 +30,6 @@ public class FragmentActivity extends Activity implements OnClickListener {
 		frag2 = new Fragment2();		
 		fm.beginTransaction().add(R.id.frag_parent, frag1).commit();
 		currentFrag = 1;
-
 	}
 
 	@Override
@@ -46,8 +45,6 @@ public class FragmentActivity extends Activity implements OnClickListener {
 			currentFrag = 1;
 			fm.beginTransaction().add(R.id.frag_parent, frag1).commit();
 			Log.i(TAG, "Switching to 1");
-		}
-		
+		}		
 	}
-
 }

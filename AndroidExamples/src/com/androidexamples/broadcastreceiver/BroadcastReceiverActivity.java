@@ -26,11 +26,11 @@ public class BroadcastReceiverActivity extends Activity {
 			public void onClick(View arg0) {
 				String txt = entry.getText().toString();
 				Intent intent = new Intent();
-				intent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
+				//intent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
 				intent.setAction("com.androidexamples.broadcastreceiver");
 				intent.putExtra("payload", txt);
 				sendBroadcast(intent);
-				Log.i(TAG, "Broadcast Sent");
+				Log.i(TAG, "Broadcast sent with a payload of: " + txt);
 			}
         });
     }
