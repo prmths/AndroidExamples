@@ -1,4 +1,6 @@
-package com.example.androidexamples;
+package com.androidexamples;
+
+import com.example.androidexamples.R;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -30,12 +32,12 @@ public class LauncherActivity extends Activity implements OnClickListener {
 		switch (arg0.getId()) {
 
 		case R.id.fragmentexample:
-			i.setClass(this, com.example.fragment.FragmentActivity.class);
+			i.setClass(this, com.androidexamples.fragment.FragmentActivity.class);
 			startActivity(i);
 			break;
 		
 		case R.id.brexample:
-			i.setClass(this, com.example.broadcastreceiver.BroadcastReceiverActivity.class);
+			i.setClass(this, com.androidexamples.broadcastreceiver.BroadcastReceiverActivity.class);
 			startActivity(i);
 			break;
 		}

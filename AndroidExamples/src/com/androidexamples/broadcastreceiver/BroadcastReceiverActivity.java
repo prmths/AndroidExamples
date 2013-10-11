@@ -1,4 +1,4 @@
-package com.example.broadcastreceiver;
+package com.androidexamples.broadcastreceiver;
 
 import android.app.Activity;
 import android.content.Intent;
