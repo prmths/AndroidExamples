@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.example.androidexamples.R;
+import com.androidexamples.R;
 
 public class FragmentActivity extends Activity implements OnClickListener {
 	public static final String TAG = "@FragmentDemo";

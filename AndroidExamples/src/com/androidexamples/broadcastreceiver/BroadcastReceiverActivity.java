@@ -9,7 +9,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.androidexamples.R;
+import com.androidexamples.R;
 
 public class BroadcastReceiverActivity extends Activity {
 	public static String TAG = "BroadcastReceiverExample";
@@ -27,7 +27,7 @@ public class BroadcastReceiverActivity extends Activity {
 				String txt = entry.getText().toString();
 				Intent intent = new Intent();
 				intent.addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES);
-				intent.setAction("com.example.broadcastreceiver");
+				intent.setAction("com.androidexamples.broadcastreceiver");
 				intent.putExtra("payload", txt);
 				sendBroadcast(intent);
 				Log.i(TAG, "Broadcast Sent");

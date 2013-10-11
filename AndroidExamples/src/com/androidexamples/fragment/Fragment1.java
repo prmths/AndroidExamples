@@ -1,7 +1,7 @@
 package com.androidexamples.fragment;
 
 
-import com.example.androidexamples.R;
+import com.androidexamples.R;
 
 import android.app.Fragment;
 import android.os.Bundle;

@@ -12,8 +12,7 @@ public class ExampleReceiver extends BroadcastReceiver {
 		String msg = "Broadcast Intent Detected! Your input was: ";
 		String payload = arg1.getExtras().getString("payload");
 		msg += payload.equals("") ? "Not Entered" : payload;
-		Toast.makeText(arg0, msg, Toast.LENGTH_LONG).show();
-		
+		Toast.makeText(arg0, msg, Toast.LENGTH_LONG).show();		
 	}
 
 }
